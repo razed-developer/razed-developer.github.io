@@ -9,7 +9,9 @@
     "deploy": "npm run build && git push origin main",
     "publish:draft": "node scripts/promote-wiki-draft.mjs",
     "preview": "vite preview",
-    "typecheck": "tsc -p tsconfig.app.json --noEmit && tsc -p tsconfig.node.json --noEmit"
+    "typecheck": "tsc -p tsconfig.app.json --noEmit && tsc -p tsconfig.node.json --noEmit",
+    "sync:private": "node scripts/sync-private-repos.mjs",
+    "share:private": "node scripts/export-private-placeholders.mjs"
   },
   "dependencies": {
     "react": "^19.1.1",

@@ -1,0 +1,29 @@
+{
+  "repos": [
+    {
+      "repoName": "my-private-repo",
+      "enabled": true,
+      "shareToPublic": true,
+      "publicCard": {
+        "id": "private-my-private-repo",
+        "slug": "private-my-private-repo",
+        "title": "Private WIP Project",
+        "description": "A private project represented publicly as a safe placeholder card.",
+        "status": "wip",
+        "tags": ["private", "wip"],
+        "stack": ["TypeScript", "React"],
+        "progress": 45,
+        "todoOpen": 7,
+        "todoClosed": 11,
+        "featured": false,
+        "lastUpdatedText": "Updated manually",
+        "useFetched": {
+          "repoNameAsTitle": false,
+          "description": false,
+          "primaryLanguageAsStack": false,
+          "updatedAtAsLastUpdatedText": false
+        }
+      }
+    }
+  ]
+}

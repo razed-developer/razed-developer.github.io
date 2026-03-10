@@ -56,6 +56,21 @@ Set `VITE_ENABLE_LOCAL_EDITOR=true` when you want the local article editor avail
 npm run dev
 ```
 
+Private local repo sync:
+
+1. Copy `.env.private.example` into a local non-committed env file and set `GITHUB_TOKEN`.
+2. Copy `private-repos.config.example.json` to `private-repos.config.local.json`.
+3. Add only the private repo names you want to sync and optionally share as public-safe placeholders.
+4. Run:
+
+```bash
+source .env.private
+npm run sync:private
+npm run share:private
+```
+
+`sync:private` creates an ignored local snapshot. `share:private` only exports the explicit safe placeholder fields you define in `publicCard`.
+
 ## Build
 
 Run a type-safe production build with:
@@ -82,6 +97,9 @@ Private placeholder cards:
 
 - Edit [src/data/public/privatePlaceholders.json](/home/kevin/Projects/Dev/razed-developer.github.io/src/data/public/privatePlaceholders.json).
 - These cards are safe-by-design placeholders only. Do not include sensitive names, URLs, or implementation details.
+- For a local-assisted workflow, define curated share entries in `private-repos.config.local.json`, run `npm run sync:private`, then `npm run share:private`.
+- Exported private cards are forced into a private/WIP placeholder shape before they reach the public dashboard.
+- In `publicCard.useFetched`, you can opt into reusing selected fetched metadata for the public placeholder: `repoNameAsTitle`, `description`, `primaryLanguageAsStack`, and `updatedAtAsLastUpdatedText`.
 
 Links:
 
@@ -155,6 +173,7 @@ Rules for keeping the public build safe:
 - Keep private data in a local-only source and exclude it from any GitHub Pages workflow.
 - Keep the wiki editor local-only unless you later build a separate authenticated content workflow.
 - Keep draft content outside `src/` unless it is intentionally ready for public publication.
+- Keep `GITHUB_TOKEN`, `private-repos.config.local.json`, and `private-repos.snapshot.local.json` out of version control.
 
 ## GitHub Pages deployment
 

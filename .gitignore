@@ -4,3 +4,7 @@ dist
 .env
 .env.local
 .env.*.local
+.env.private
+
+private-repos.config.local.json
+private-repos.snapshot.local.json
