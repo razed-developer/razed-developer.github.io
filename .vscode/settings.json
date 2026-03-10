@@ -27,5 +27,14 @@
     "**/node_modules": true
   },
   "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 1000
+  "files.autoSaveDelay": 1000,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.cwd": "${workspaceFolder}",
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml",
+    "vite.config.ts": "vite.config.*",
+    "tsconfig.json": "tsconfig.*",
+    "tauri.conf.json": "src-tauri/tauri.conf.json"
+  }
 }

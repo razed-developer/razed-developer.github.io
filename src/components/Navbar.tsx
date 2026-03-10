@@ -13,7 +13,11 @@ export function Navbar() {
     <header className="site-header">
       <div className="page-container site-header__inner">
         <NavLink to="/" className="site-brand">
-          <span className="site-brand__mark">RZ</span>
+          <img
+            className="site-brand__logo"
+            src={`${import.meta.env.BASE_URL}razed-developer-logo-min.png`}
+            alt="Razed Developer logo"
+          />
           <div>
             <strong>{siteConfig.title}</strong>
             <span>Public dev dashboard</span>

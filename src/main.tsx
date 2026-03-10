@@ -6,8 +6,10 @@ import { HomePage } from './pages/HomePage';
 import { ProjectsPage } from './pages/ProjectsPage';
 import { WikiIndexPage } from './pages/WikiIndexPage';
 import { WikiArticlePage } from './pages/WikiArticlePage';
+import { WikiEditorPage } from './pages/WikiEditorPage';
 import { LinksPage } from './pages/LinksPage';
 import { NotFoundPage } from './pages/NotFoundPage';
+import { siteConfig } from './config/site';
 import './styles/index.css';
 
 const router = createBrowserRouter(
@@ -32,6 +34,14 @@ const router = createBrowserRouter(
           path: 'wiki/:slug',
           element: <WikiArticlePage />,
         },
+        ...(siteConfig.localEditorEnabled
+          ? [
+              {
+                path: 'wiki/editor',
+                element: <WikiEditorPage />,
+              },
+            ]
+          : []),
         {
           path: 'links',
           element: <LinksPage />,

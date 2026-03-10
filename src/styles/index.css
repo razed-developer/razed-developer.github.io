@@ -107,20 +107,19 @@ select {
   display: block;
 }
 
+.site-brand__logo {
+  width: 2.9rem;
+  height: 2.9rem;
+  object-fit: contain;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(110, 231, 183, 0.16), rgba(96, 165, 250, 0.18));
+  border: 1px solid rgba(110, 231, 183, 0.18);
+  padding: 0.28rem;
+}
+
 .site-brand span {
   color: var(--text-muted);
   font-size: 0.9rem;
-}
-
-.site-brand__mark {
-  display: grid;
-  place-items: center;
-  width: 2.7rem;
-  height: 2.7rem;
-  border-radius: 14px;
-  background: linear-gradient(135deg, rgba(110, 231, 183, 0.28), rgba(96, 165, 250, 0.32));
-  border: 1px solid rgba(110, 231, 183, 0.3);
-  font-weight: 700;
 }
 
 .site-nav {
@@ -189,7 +188,8 @@ select {
 .project-card__todo,
 .tag-row,
 .quick-links,
-.not-found-actions {
+.not-found-actions,
+.page-actions {
   display: flex;
   gap: 0.75rem;
   flex-wrap: wrap;
@@ -209,6 +209,12 @@ select {
 .button--primary {
   background: linear-gradient(135deg, rgba(110, 231, 183, 0.22), rgba(45, 212, 191, 0.26));
   border-color: rgba(110, 231, 183, 0.35);
+}
+
+.button--small {
+  min-height: 2.2rem;
+  padding: 0 0.8rem;
+  font-size: 0.9rem;
 }
 
 .hero__side,
@@ -416,6 +422,94 @@ select {
   margin: 0 0 1rem;
 }
 
+.page-actions {
+  margin-bottom: 1rem;
+}
+
+.editor-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.editor-panel {
+  padding: 1.25rem;
+}
+
+.editor-panel h3 {
+  margin-top: 0;
+}
+
+.editor-toolbar {
+  display: grid;
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+}
+
+.editor-form {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.editor-field {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.editor-field span {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.editor-field input,
+.editor-field textarea,
+.editor-field select {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(15, 23, 42, 0.84);
+  color: var(--text);
+  padding: 0.8rem 0.9rem;
+}
+
+.editor-textarea {
+  min-height: 420px;
+  resize: vertical;
+}
+
+.editor-output {
+  margin: 0;
+  padding: 1rem;
+  border-radius: 18px;
+  background: #09111d;
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.editor-validation {
+  padding: 1rem 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.editor-validation h3 {
+  margin: 0 0 0.65rem;
+}
+
+.editor-validation ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #fecaca;
+}
+
+.editor-validation--ok {
+  display: grid;
+  gap: 0.25rem;
+  color: #bbf7d0;
+}
+
 .progress-ring {
   --progress: 0%;
   display: grid;
@@ -496,7 +590,8 @@ select {
 @media (max-width: 960px) {
   .hero,
   .split-section,
-  .toolbar {
+  .toolbar,
+  .editor-grid {
     grid-template-columns: 1fr;
   }
 

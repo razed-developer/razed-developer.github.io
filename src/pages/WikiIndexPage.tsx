@@ -5,8 +5,10 @@ import { PageContainer } from '../components/PageContainer';
 import { SearchInput } from '../components/SearchInput';
 import { SectionHeader } from '../components/SectionHeader';
 import { WikiCard } from '../components/WikiCard';
+import { siteConfig } from '../config/site';
 import { getWikiArticles } from '../lib/content';
 import { filterWiki } from '../lib/filters';
+import { Link } from 'react-router-dom';
 
 function optionsFrom(values: string[]): Array<{ label: string; value: string }> {
   return ['all', ...new Set(values)].map((value) => ({
@@ -34,6 +36,13 @@ export function WikiIndexPage() {
           title="Searchable markdown knowledge base"
           description="Notes, commands, setup references, and troubleshooting articles sourced from local markdown files."
         />
+        {siteConfig.localEditorEnabled ? (
+          <div className="page-actions">
+            <Link className="button" to="/wiki/editor">
+              Open Local Editor
+            </Link>
+          </div>
+        ) : null}
         <div className="toolbar">
           <SearchInput value={query} onChange={setQuery} placeholder="Search wiki titles, categories, or tags" />
           <FilterBar

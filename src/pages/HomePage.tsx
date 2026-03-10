@@ -25,11 +25,14 @@ export function HomePage() {
       <section className="hero card">
         <div className="hero__content">
           <p className="section-header__eyebrow">Developer Dashboard</p>
-          <h1>Public landing page, project directory, and markdown notes for razed-developer.</h1>
+          <h1>Too anxious to call it vibe coding.</h1>
+          <h1>Too curious to stop now.</h1>
           <p>
-            This build runs in <strong>{siteConfig.mode}</strong> mode. Public repositories are
-            fetched from GitHub, project progress is curated in local JSON, and private work is
-            represented only by intentionally vague placeholder cards.
+            This site is my personal development hub — a collection of projects, experiments, and
+            notes. It tracks software I&apos;m building, tools I&apos;m exploring, and the
+            documentation I write along the way. Part project dashboard and part personal wiki,
+            it&apos;s where I keep the ideas, snippets, and references I return to while building
+            things.
           </p>
           <div className="hero__actions">
             <Link className="button button--primary" to="/projects">
