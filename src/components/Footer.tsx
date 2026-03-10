@@ -3,7 +3,7 @@ export function Footer() {
     <footer className="site-footer">
       <div className="page-container site-footer__inner">
         <p>Public mode only. Private dashboards must stay local and use a separate data source.</p>
-        <p>Built with React, Vite, TypeScript, React Router, and markdown content.</p>
+        <p>Built with React, Vite, TypeScript, React Router, and markdown content for razed-developer.</p>
       </div>
     </footer>
   );

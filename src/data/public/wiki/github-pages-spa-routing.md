@@ -1,7 +1,7 @@
 ---
 title: GitHub Pages SPA Routing
 slug: github-pages-spa-routing
-summary: Minimal redirect trick to keep client-side routes working on GitHub Pages.
+summary: Minimal redirect strategy for preserving deep links on the public dashboard deployed to GitHub Pages.
 category: troubleshooting
 tags:
   - github-pages
@@ -9,7 +9,7 @@ tags:
   - routing
 updatedAt: 2026-03-10
 related:
-  - react-router-basics
+  - github-pages-app-routing
 ---
 
 ## Problem
@@ -29,4 +29,4 @@ Use a `404.html` page that redirects back into the main app with the original pa
 
 ## Tradeoff
 
-This keeps BrowserRouter URLs, but it is still a static-site workaround, not a full server rewrite.
+This keeps clean BrowserRouter URLs for the public site, but it is still a static-host workaround rather than a real server-side rewrite.

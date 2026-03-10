@@ -1,44 +1,53 @@
 [
   {
+    "id": "github-profile",
+    "title": "GitHub Profile",
+    "description": "Public profile for the repos surfaced on this dashboard.",
+    "url": "https://github.com/razed-developer",
+    "category": "profile",
+    "tags": ["github", "profile"],
+    "pinned": true
+  },
+  {
+    "id": "github-pages-docs",
+    "title": "GitHub Pages Docs",
+    "description": "Reference for publishing a static site from GitHub with Actions-based deployment.",
+    "url": "https://docs.github.com/pages",
+    "category": "deployment",
+    "tags": ["github-pages", "deployment", "static-site"],
+    "pinned": true
+  },
+  {
+    "id": "tauri-docs",
+    "title": "Tauri v2 Docs",
+    "description": "Desktop app reference for the Tauri sandbox project and future local apps.",
+    "url": "https://v2.tauri.app",
+    "category": "desktop",
+    "tags": ["tauri", "desktop", "rust"],
+    "pinned": true
+  },
+  {
+    "id": "react-markdown-docs",
+    "title": "react-markdown",
+    "description": "Markdown rendering reference used for the wiki and code snippet views.",
+    "url": "https://github.com/remarkjs/react-markdown",
+    "category": "frontend",
+    "tags": ["markdown", "react", "wiki"]
+  },
+  {
     "id": "vite-docs",
     "title": "Vite Docs",
-    "description": "Reference for Vite config, build behavior, and asset handling.",
+    "description": "Reference for the frontend build pipeline used across the public site and related prototypes.",
     "url": "https://vite.dev",
-    "category": "tooling",
-    "tags": ["vite", "frontend", "build"],
-    "pinned": true
-  },
-  {
-    "id": "react-router-docs",
-    "title": "React Router",
-    "description": "Routing docs for layouts, navigation, and nested routes.",
-    "url": "https://reactrouter.com",
     "category": "frontend",
-    "tags": ["react", "routing"],
-    "pinned": true
+    "tags": ["vite", "build", "tooling"]
   },
   {
-    "id": "typescript-handbook",
-    "title": "TypeScript Handbook",
-    "description": "Type system reference and practical language guidance.",
-    "url": "https://www.typescriptlang.org/docs/",
-    "category": "language",
-    "tags": ["typescript", "reference"]
-  },
-  {
-    "id": "github-actions",
-    "title": "GitHub Actions",
-    "description": "Workflow syntax, actions marketplace, and deployment guides.",
-    "url": "https://docs.github.com/actions",
-    "category": "devops",
-    "tags": ["github", "ci", "deployment"]
-  },
-  {
-    "id": "mdn-fetch",
-    "title": "MDN Fetch API",
-    "description": "Good baseline reference for browser fetch behavior and patterns.",
-    "url": "https://developer.mozilla.org/docs/Web/API/Fetch_API",
-    "category": "browser",
-    "tags": ["fetch", "web", "api"]
+    "id": "shadcn-docs",
+    "title": "shadcn/ui",
+    "description": "Component system reference relevant to the Tauri starter and future interface work.",
+    "url": "https://ui.shadcn.com",
+    "category": "frontend",
+    "tags": ["components", "ui", "design-system"]
   }
 ]

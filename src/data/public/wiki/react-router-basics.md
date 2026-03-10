@@ -1,12 +1,12 @@
 ---
-title: React Router Basics
-slug: react-router-basics
-summary: Quick notes for route structure, nested layouts, and navigation setup.
+title: GitHub Pages App Routing
+slug: github-pages-app-routing
+summary: Notes for keeping BrowserRouter routes working cleanly on a static GitHub Pages deployment.
 category: setup
 tags:
-  - react
-  - routing
-  - vite
+  - github-pages
+  - react-router
+  - deployment
 updatedAt: 2026-03-10
 related:
   - github-pages-spa-routing
@@ -14,7 +14,7 @@ related:
 
 ## Route layout pattern
 
-Use a shared layout route for navigation and footer chrome so page routes only focus on content.
+Keep one shared layout route for the navbar and footer so pages stay focused on content and GitHub Pages only has to boot a single app shell.
 
 ```tsx
 const router = createBrowserRouter([
@@ -32,5 +32,5 @@ const router = createBrowserRouter([
 ## Notes
 
 - Keep page data loading isolated from layout concerns.
-- Prefer typed route params for article pages.
-- For GitHub Pages, add a redirect-based fallback for direct deep links.
+- Prefer typed route params for article pages like `/wiki/:slug`.
+- For GitHub Pages, pair `BrowserRouter` with a redirect-based `404.html` fallback.

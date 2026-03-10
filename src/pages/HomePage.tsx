@@ -25,11 +25,11 @@ export function HomePage() {
       <section className="hero card">
         <div className="hero__content">
           <p className="section-header__eyebrow">Developer Dashboard</p>
-          <h1>Public landing page, repo directory, and markdown wiki in one static app.</h1>
+          <h1>Public landing page, project directory, and markdown notes for razed-developer.</h1>
           <p>
-            This build runs in <strong>{siteConfig.mode}</strong> mode. Public repositories can be
-            fetched from GitHub, manual progress stays local in JSON, and private work is
-            represented only by safe placeholder cards.
+            This build runs in <strong>{siteConfig.mode}</strong> mode. Public repositories are
+            fetched from GitHub, project progress is curated in local JSON, and private work is
+            represented only by intentionally vague placeholder cards.
           </p>
           <div className="hero__actions">
             <Link className="button button--primary" to="/projects">

@@ -1,3 +1,4 @@
+import { siteConfig } from '../config/site';
 import { NavLink } from 'react-router-dom';
 
 const navItems = [
@@ -14,7 +15,7 @@ export function Navbar() {
         <NavLink to="/" className="site-brand">
           <span className="site-brand__mark">RZ</span>
           <div>
-            <strong>Razed Pages</strong>
+            <strong>{siteConfig.title}</strong>
             <span>Public dev dashboard</span>
           </div>
         </NavLink>
