@@ -1,0 +1,44 @@
+[
+  {
+    "id": "razed-pages",
+    "repoName": "razed-pages",
+    "slug": "razed-pages",
+    "title": "Razed Pages",
+    "description": "Public developer landing dashboard and wiki with markdown content, repo cards, and GitHub Pages deployment.",
+    "tags": ["dashboard", "wiki", "static-site"],
+    "stack": ["React", "TypeScript", "Vite"],
+    "progress": 72,
+    "todoOpen": 8,
+    "todoClosed": 19,
+    "featured": true,
+    "status": "active"
+  },
+  {
+    "id": "design-system-lab",
+    "repoName": "design-system-lab",
+    "slug": "design-system-lab",
+    "title": "Design System Lab",
+    "description": "Component experiments, layout studies, and interaction patterns for internal and public-facing interfaces.",
+    "tags": ["ui", "components", "experiments"],
+    "stack": ["React", "CSS"],
+    "progress": 46,
+    "todoOpen": 11,
+    "todoClosed": 9,
+    "featured": true,
+    "status": "active",
+    "homepageUrl": "https://example.com"
+  },
+  {
+    "id": "cli-toolkit",
+    "repoName": "cli-toolkit",
+    "slug": "cli-toolkit",
+    "title": "CLI Toolkit",
+    "description": "Reusable command-line helpers and workflow scripts for day-to-day developer operations.",
+    "tags": ["cli", "automation"],
+    "stack": ["TypeScript", "Node.js"],
+    "progress": 88,
+    "todoOpen": 3,
+    "todoClosed": 24,
+    "status": "done"
+  }
+]

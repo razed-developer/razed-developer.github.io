@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting…</title>
+    <script>
+      const knownRoutes = new Set(['projects', 'wiki', 'links', 'not-found']);
+      const segments = window.location.pathname.split('/').filter(Boolean);
+      const repoBase =
+        segments.length > 0 && !knownRoutes.has(segments[0]) ? `/${segments[0]}` : '';
+      const redirectTarget = `${repoBase}/?redirect=${encodeURIComponent(
+        window.location.pathname + window.location.search + window.location.hash,
+      )}`;
+      window.location.replace(redirectTarget);
+    </script>
+  </head>
+  <body></body>
+</html>

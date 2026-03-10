@@ -1,0 +1,44 @@
+[
+  {
+    "id": "vite-docs",
+    "title": "Vite Docs",
+    "description": "Reference for Vite config, build behavior, and asset handling.",
+    "url": "https://vite.dev",
+    "category": "tooling",
+    "tags": ["vite", "frontend", "build"],
+    "pinned": true
+  },
+  {
+    "id": "react-router-docs",
+    "title": "React Router",
+    "description": "Routing docs for layouts, navigation, and nested routes.",
+    "url": "https://reactrouter.com",
+    "category": "frontend",
+    "tags": ["react", "routing"],
+    "pinned": true
+  },
+  {
+    "id": "typescript-handbook",
+    "title": "TypeScript Handbook",
+    "description": "Type system reference and practical language guidance.",
+    "url": "https://www.typescriptlang.org/docs/",
+    "category": "language",
+    "tags": ["typescript", "reference"]
+  },
+  {
+    "id": "github-actions",
+    "title": "GitHub Actions",
+    "description": "Workflow syntax, actions marketplace, and deployment guides.",
+    "url": "https://docs.github.com/actions",
+    "category": "devops",
+    "tags": ["github", "ci", "deployment"]
+  },
+  {
+    "id": "mdn-fetch",
+    "title": "MDN Fetch API",
+    "description": "Good baseline reference for browser fetch behavior and patterns.",
+    "url": "https://developer.mozilla.org/docs/Web/API/Fetch_API",
+    "category": "browser",
+    "tags": ["fetch", "web", "api"]
+  }
+]

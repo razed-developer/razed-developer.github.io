@@ -1,0 +1,44 @@
+[
+  {
+    "id": "private-tooling-suite",
+    "slug": "private-tooling-suite",
+    "title": "Private Tooling Suite",
+    "description": "Internal workflow experiments and local-only automation currently in progress.",
+    "visibility": "private",
+    "status": "wip",
+    "tags": ["private", "automation"],
+    "stack": ["TypeScript", "CLI"],
+    "progress": 58,
+    "todoOpen": 12,
+    "todoClosed": 18,
+    "featured": true,
+    "lastUpdatedText": "Updated recently"
+  },
+  {
+    "id": "ops-playground",
+    "slug": "ops-playground",
+    "title": "Ops Playground",
+    "description": "A private sandbox for deployment notes, system checks, and experimental runbooks.",
+    "visibility": "private",
+    "status": "active",
+    "tags": ["private", "ops"],
+    "stack": ["Shell", "Docker"],
+    "progress": 34,
+    "todoOpen": 7,
+    "todoClosed": 5,
+    "lastUpdatedText": "Tracked manually"
+  },
+  {
+    "id": "new-concept",
+    "slug": "new-concept",
+    "title": "Next Concept",
+    "description": "A placeholder for an upcoming private project that is still in idea validation.",
+    "visibility": "private",
+    "status": "idea",
+    "tags": ["private", "idea"],
+    "stack": ["TBD"],
+    "progress": 10,
+    "todoOpen": 4,
+    "todoClosed": 0
+  }
+]
