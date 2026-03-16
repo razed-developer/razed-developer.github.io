@@ -1,64 +1,5 @@
 [
   {
-    "id": "private-client-build",
-    "slug": "private-client-build",
-    "title": "Private Client Build",
-    "description": "A local-only project with active iteration that is intentionally represented here without implementation detail.",
-    "visibility": "private",
-    "status": "wip",
-    "tags": [
-      "private",
-      "wip"
-    ],
-    "stack": [
-      "TypeScript",
-      "React"
-    ],
-    "progress": 61,
-    "todoOpen": 11,
-    "todoClosed": 17,
-    "featured": true,
-    "lastUpdatedText": "Updated recently"
-  },
-  {
-    "id": "local-dashboard-lab",
-    "slug": "local-dashboard-lab",
-    "title": "Local Dashboard Lab",
-    "description": "A private internal dashboard track reserved for local-only data and workflow experiments.",
-    "visibility": "private",
-    "status": "active",
-    "tags": [
-      "private",
-      "dashboard"
-    ],
-    "stack": [
-      "React",
-      "Markdown"
-    ],
-    "progress": 39,
-    "todoOpen": 8,
-    "todoClosed": 6,
-    "lastUpdatedText": "Tracked manually"
-  },
-  {
-    "id": "new-experiment",
-    "slug": "new-experiment",
-    "title": "New Experiment",
-    "description": "An intentionally vague placeholder for a future private project still being scoped.",
-    "visibility": "private",
-    "status": "idea",
-    "tags": [
-      "private",
-      "idea"
-    ],
-    "stack": [
-      "TBD"
-    ],
-    "progress": 10,
-    "todoOpen": 4,
-    "todoClosed": 0
-  },
-  {
     "id": "private-assignment-tracker",
     "slug": "private-assignment-tracker",
     "title": "Assignment Tracker",
@@ -76,6 +17,46 @@
     "progress": 45,
     "todoOpen": 7,
     "todoClosed": 11,
+    "featured": false,
+    "lastUpdatedText": "Updated manually"
+  },
+  {
+    "id": "private-tauri-teams",
+    "slug": "private-tauri-teams",
+    "title": "Tauri Teams",
+    "description": "Tauri-based wrapper for Microsoft Teams. Lightweight and fast.",
+    "visibility": "private",
+    "status": "wip",
+    "tags": [
+      "private",
+      "wip"
+    ],
+    "stack": [
+      "Rust"
+    ],
+    "progress": 0,
+    "todoOpen": 0,
+    "todoClosed": 0,
+    "featured": false,
+    "lastUpdatedText": "Updated manually"
+  },
+  {
+    "id": "private-tulbox",
+    "slug": "private-tulbox",
+    "title": "TulBox",
+    "description": "Suite of tools to help manage your PC, such as Folder Size Visualizer, Duplicate Checker, and more...",
+    "visibility": "private",
+    "status": "wip",
+    "tags": [
+      "private",
+      "wip"
+    ],
+    "stack": [
+      "TypeScript"
+    ],
+    "progress": 0,
+    "todoOpen": 0,
+    "todoClosed": 0,
     "featured": false,
     "lastUpdatedText": "Updated manually"
   }
