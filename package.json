@@ -11,7 +11,8 @@
     "preview": "vite preview",
     "typecheck": "tsc -p tsconfig.app.json --noEmit && tsc -p tsconfig.node.json --noEmit",
     "sync:private": "node scripts/sync-private-repos.mjs",
-    "share:private": "node scripts/export-private-placeholders.mjs"
+    "share:private": "node scripts/export-private-placeholders.mjs",
+    "select:private": "node scripts/select-private-repos.mjs"
   },
   "dependencies": {
     "react": "^19.1.1",

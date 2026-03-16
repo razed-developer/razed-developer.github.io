@@ -6,8 +6,14 @@
     "description": "A local-only project with active iteration that is intentionally represented here without implementation detail.",
     "visibility": "private",
     "status": "wip",
-    "tags": ["private", "wip"],
-    "stack": ["TypeScript", "React"],
+    "tags": [
+      "private",
+      "wip"
+    ],
+    "stack": [
+      "TypeScript",
+      "React"
+    ],
     "progress": 61,
     "todoOpen": 11,
     "todoClosed": 17,
@@ -21,8 +27,14 @@
     "description": "A private internal dashboard track reserved for local-only data and workflow experiments.",
     "visibility": "private",
     "status": "active",
-    "tags": ["private", "dashboard"],
-    "stack": ["React", "Markdown"],
+    "tags": [
+      "private",
+      "dashboard"
+    ],
+    "stack": [
+      "React",
+      "Markdown"
+    ],
     "progress": 39,
     "todoOpen": 8,
     "todoClosed": 6,
@@ -35,10 +47,36 @@
     "description": "An intentionally vague placeholder for a future private project still being scoped.",
     "visibility": "private",
     "status": "idea",
-    "tags": ["private", "idea"],
-    "stack": ["TBD"],
+    "tags": [
+      "private",
+      "idea"
+    ],
+    "stack": [
+      "TBD"
+    ],
     "progress": 10,
     "todoOpen": 4,
     "todoClosed": 0
+  },
+  {
+    "id": "private-assignment-tracker",
+    "slug": "private-assignment-tracker",
+    "title": "Assignment Tracker",
+    "description": "Help track your assignments with helpful features like notifications, chunking into smaller tasks, and being shown your progress as your work towards the finish.",
+    "visibility": "private",
+    "status": "wip",
+    "tags": [
+      "private",
+      "wip"
+    ],
+    "stack": [
+      "TypeScript",
+      "React"
+    ],
+    "progress": 45,
+    "todoOpen": 7,
+    "todoClosed": 11,
+    "featured": false,
+    "lastUpdatedText": "Updated manually"
   }
 ]

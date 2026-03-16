@@ -60,16 +60,17 @@ Private local repo sync:
 
 1. Copy `.env.private.example` into a local non-committed env file and set `GITHUB_TOKEN`.
 2. Copy `private-repos.config.example.json` to `private-repos.config.local.json`.
-3. Add only the private repo names you want to sync and optionally share as public-safe placeholders.
+3. Either add repo names manually to `private-repos.config.local.json` or use the selector script to choose them interactively.
 4. Run:
 
 ```bash
 source .env.private
+npm run select:private
 npm run sync:private
 npm run share:private
 ```
 
-`sync:private` creates an ignored local snapshot. `share:private` only exports the explicit safe placeholder fields you define in `publicCard`.
+`select:private` fetches all owned private repo names and lets you choose which ones to track locally. `sync:private` creates an ignored local snapshot. `share:private` only exports the explicit safe placeholder fields you define in `publicCard`.
 
 ## Build
 
